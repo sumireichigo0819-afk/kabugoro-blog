@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>かぶごろー | プロフィール</title>
+  <meta name="description" content="かぶごろーのプロフィールページ。高校2年生。合唱・クラシック・アニメ・読書が好きです。">
+  <meta name="keywords" content="かぶごろー, プロフィール, 高校生, 合唱, クラシック, アニメ, 読書">
+  <meta name="author" content="かぶごろー">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="かぶごろー | プロフィール">
+  <meta property="og:description" content="高校2年生。合唱・クラシック・アニメ・読書が好きです。">
+  <meta property="og:locale" content="ja_JP">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="かぶごろー | プロフィール">
+  <meta name="twitter:description" content="高校2年生。合唱・クラシック・アニメ・読書が好きです。">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "かぶごろー",
+    "description": "合唱・クラシック・アニメ・読書が好きな高校2年生",
+    "url": "https://yoursite.com"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f9f7f4;
+      --text: #1c1c1c;
+      --muted: #999;
+      --border: #e8e4de;
+      --accent: #3a3a3a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 300;
+      line-height: 1.9;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 88px 28px 120px;
+    }
+
+    header {
+      margin-bottom: 64px;
+      animation: fadeUp .65s ease both;
+    }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 10.5px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      font-weight: 600;
+      letter-spacing: -.025em;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 52px;
+      animation: fadeUp .65s ease both;
+    }
+    section:nth-child(2) { animation-delay: .08s; }
+    section:nth-child(3) { animation-delay: .16s; }
+    section:nth-child(4) { animation-delay: .24s; }
+
+    .label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    p { font-size: .96rem; color: #444; margin-bottom: 10px; }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 44px 0; }
+
+    .hobbies {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .hobby-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 18px;
+      background: #fff;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+
+    .hobby-icon { font-size: 1.6rem; margin-bottom: 8px; display: block; }
+    .hobby-name { font-weight: 600; font-size: .95rem; display: block; margin-bottom: 4px; }
+    .hobby-desc { font-size: .82rem; color: var(--muted); line-height: 1.6; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 14px; }
+
+    /* ── diary ── */
+    .diary { display: flex; flex-direction: column; gap: 16px; }
+
+    .diary-entry {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .diary-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: .15em;
+      color: var(--muted);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .diary-title {
+      font-weight: 600;
+      font-size: .97rem;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .diary-body {
+      font-size: .88rem;
+      color: #555;
+      line-height: 1.8;
+      white-space: pre-wrap;
+    }
+
+    .link-item {
+      text-decoration: none;
+      color: var(--text);
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: .05em;
+      border-bottom: 1px solid var(--text);
+      padding-bottom: 2px;
+      transition: opacity .2s;
+    }
+    .link-item:hover { opacity: .45; }
+
+    footer {
+      margin-top: 96px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-family: 'DM Mono', monospace;
+      font-size: 10.5px;
+      color: var(--muted);
+      letter-spacing: .06em;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      .page { padding: 56px 20px 80px; }
+      .hobbies { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <header>
+      <p class="eyebrow">Profile</p>
+      <h1>かぶごろー</h1>
+
+    </header>
+
+    <section aria-labelledby="about">
+      <p class="label" id="about">About</p>
+      <p>高2。福井の合唱人。クラシック聞いたり、アニメ見たり、本読んだりetc.色々してます</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="links">
+      <p class="label" id="links">Links</p>
+      <div class="links">
+        <a href="https://x.com/come2_cp" class="link-item" rel="noopener noreferrer" target="_blank">X (Twitter) ↗</a>
+        <a href="https://www.instagram.com/ichirenn/" class="link-item" rel="noopener noreferrer" target="_blank">Instagram ↗</a>
+        <a href="https://marshmallow-qa.com/do3wjs87wa0omqi?t=SjXqFR&utm_medium=url_text&utm_source=promotion" class="link-item" rel="noopener noreferrer" target="_blank">marshmallow 🍡 ↗</a>
+        <a href="https://mail.google.com/mail/?view=cm&to=sumire.ichigo0819@gmail.com" class="link-item" target="_blank" rel="noopener noreferrer">Mail ✉</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="hobbies">
+      <p class="label" id="hobbies">Hobbies</p>
+      <div class="hobbies">
+        <div class="hobby-card">
+          <span class="hobby-icon">🎵</span>
+          <span class="hobby-name">合唱</span>
+          <span class="hobby-desc">混声合唱団Shirasa-Giに所属。<br><br>今まで唱った曲↓<br>いざ起て戦人 / グラナハム<br>春 / 信長貴富<br>僕らはいきものだから / 長屋晴子<br>Dies sanctificatus / パレストリーナ<br>Gloria Patri / ラッソ<br>Ave verum corpus / リスト<br>Wachet Auf, Ruft Uns Die Stimme / ディストラー<br>Ave Maria / リスト<br>Messiah（一部） / ヘンデル<br>etc.</span>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">🎻</span>
+          <span class="hobby-name">クラシック</span>
+          <span class="hobby-desc">プレイリスト↓<br><a href="https://music.youtube.com/playlist?list=PLluj7p5JKhzO0gLYeRWd07irBbJ63012q" target="_blank" rel="noopener noreferrer" style="color:inherit;word-break:break-all;">YouTube Music ↗</a></span>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">📺</span>
+          <span class="hobby-name">アニメ</span>
+          <span class="hobby-desc">名探偵コナン<br>まじっく快斗<br>死亡遊戯で飯を食う<br>リコリス・リコイル<br>葬送のフリーレン<br>響けユーフォニアム<br>暗殺教室<br>かぐや様は告らせたい<br>超かぐや姫<br>エヴァンゲリオン<br>etc.</span>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">📚</span>
+          <span class="hobby-name">読書</span>
+          <span class="hobby-desc">今まで読んだ本↓<br>池井戸潤「半沢直樹」「不祥事」「ノーサイド・ゲーム」等<br>住野よる「君の膵臓を食べたい」「また同じ夢を見ていた」「青くて痛くて脆い」等<br>太宰治「人間失格」<br>夏目漱石「こころ」「吾輩は猫である」<br>中島敦「山月記」<br>裕夢「千歳くんはラムネ瓶の中」<br>etc.</span>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="diary">
+      <p class="label" id="diary">Diary</p>
+      <div class="diary">
+        <!-- ▼ 日記を書くときはこのブロックをコピーして追加してください（新しい順がおすすめ） -->
+        <div class="diary-entry">
+          <span class="diary-date">2025.05.13</span>
+          <span class="diary-title">AIを使うと自己肯定感が下がる。</span>
+          <span class="diary-body">プロフサイトと言えば皆、何が思いつくだろうか？おそらくlitlinkが有名ではないだろうか。そんな僕は、僕特有の昔からの逆張り精神で「いや、オリジナルなものを作りたい！！！！」と強く感じたので、久方ぶりのHTMLを触ると、あまりの忘れ具合に驚嘆した。仕方がないのでAIに作ってもらおうと思い、せっかくなら最近話題のClaudeで書いてみた。
+
+いや、まじで凄い、本当に凄い。僕が一日、少なくとも半日掛かるものを、数分で、しかもここまでクオリティの高いものが作れるとは思いもしなかった。逆に僕が今まで熱心にHTMLを勉強してきた時間は無駄であるかのように感じて、逆に自己肯定感が下がった。まさかAIに自己肯定感を下げられる日が来るだなんて、思いもよらなかった。とはいえ弱音も吐いていても仕方ないので、これからはAIに関する勉強も頑張ろうと思う。</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 かぶごろー</p>
+    </footer>
+
+  </main>
+</body>
+</html>
