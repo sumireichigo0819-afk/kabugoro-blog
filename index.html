@@ -73,12 +73,26 @@
       margin-bottom: 18px;
     }
 
+    .header-name {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+
+    .header-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
     h1 {
       font-size: clamp(2.4rem, 7vw, 3.6rem);
       font-weight: 600;
       letter-spacing: -.025em;
       line-height: 1.1;
-      margin-bottom: 18px;
     }
 
     .tagline {
@@ -204,7 +218,10 @@
 
     <header>
       <p class="eyebrow">Profile</p>
-      <h1>かぶごろー</h1>
+      <div class="header-name">
+        <img src="twitter-icon.png" alt="かぶごろーのアイコン" class="header-icon">
+        <h1>かぶごろー</h1>
+      </div>
 
     </header>
 
@@ -260,7 +277,7 @@
       <div class="diary">
         <!-- ▼ 日記を書くときはこのブロックをコピーして追加してください（新しい順がおすすめ） -->
         <div class="diary-entry">
-          <span class="diary-date">2025.05.13</span>
+          <span class="diary-date">2026.05.13</span>
           <span class="diary-title">AIを使うと自己肯定感が下がる。</span>
           <span class="diary-body">プロフサイトと言えば皆、何が思いつくだろうか？おそらくlitlinkが有名ではないだろうか。そんな僕は、僕特有の昔からの逆張り精神で「いや、オリジナルなものを作りたい！！！！」と強く感じたので、久方ぶりのHTMLを触ると、あまりの忘れ具合に驚嘆した。仕方がないのでAIに作ってもらおうと思い、せっかくなら最近話題のClaudeで書いてみた。
 
